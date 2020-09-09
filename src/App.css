@@ -17,3 +17,14 @@
 .App-link {
   color: #61dafb;
 }
+
+blockquote {
+  max-width: 500px;
+  text-align: center;
+  margin: 3em auto;
+}
+
+img {
+  margin: 3em;
+  transform: scale(1.2)
+}
