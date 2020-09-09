@@ -14,8 +14,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-size: calc(2em + 2vmin);
+  font-weight: 900;
 }
 
 blockquote {

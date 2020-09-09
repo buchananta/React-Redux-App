@@ -5,7 +5,7 @@ import { getComic } from '../actions';
 function Comic(props) {
 
 
-  useEffect(() => props.getComic(), [])
+  useEffect(() => props.getComic(props.latest), [])
   
 
   if (props.fetching) {
@@ -32,6 +32,7 @@ const mapStateToProps = (state) => {
   return {
   comic: state.comic,
   fetching: state.fetching,
+  latest: state.latest,
   }
 }
 

@@ -1,11 +1,13 @@
 import { 
   FETCH_START,
   FETCH_SUCCESS,
-  FETCH_FAIL } from '../actions';
+  FETCH_FAIL,
+  SET_LATEST, } from '../actions';
 
 const initialState = {
   comic: {},
   fetching: true,
+  latest: 2357,
 };
 
 function reducer(state = initialState, action) {
@@ -26,6 +28,11 @@ function reducer(state = initialState, action) {
           ...state.comic,
           title: action.payload
         }
+      }
+    case SET_LATEST:
+      return {
+        ...state,
+        latest: action.payload
       }
     default:
       return state;
